@@ -10,6 +10,7 @@ pipeline {
     stages {
         stage('Source') {
             steps {
+                echo 'Here is Jenkinsfile'
                 git branch: 'main', credentialsId: 'jongwanra', url: 'https://github.com/jongwanra/test-jenkins'
                 echo 'Hello World'
             }
