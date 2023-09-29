@@ -8,7 +8,7 @@ import lombok.extern.slf4j.Slf4j;
 @Slf4j
 public class HelloController {
 	@GetMapping()
-	public ResponseEntity helloWorld(){
-		return ResponseEntity.from("hello-world!20");
+	public ResponseWrapper helloWorld(){
+		return ResponseWrapper.from("hello-world!21");
 	}
 }
